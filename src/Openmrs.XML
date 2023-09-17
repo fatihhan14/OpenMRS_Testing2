@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Openmrs_TestSuite">
+
+    <test name="Openmrs_SmokeTest">
+        <groups>
+            <run>
+                <exclude name="Regression"> </exclude>
+            </run>
+        </groups>
+        <classes>
+            <class name="Openmrs_Testing"> </class>
+        </classes>
+    </test>
+
+    <test name="Openmrs_RegressionTest">
+        <groups>
+            <run>
+                <exclude name="Smoke"> </exclude>
+            </run>
+        </groups>
+        <classes>
+            <class name="Openmrs_Testing"> </class>
+        </classes>
+    </test>
+
+</suite>
